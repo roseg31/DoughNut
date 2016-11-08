@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DoughNut" parent="AppTheme">
+        <item name="colorPrimary">@color/niceSky</item>
+        <item name="colorPrimaryDark">@color/darkSprinkle</item>
+        <item name="android:navigationBarColor">@color/darkSprinkle</item>
+        <item name="colorAccent">@color/darkFrosting</item>
+    </style>
+</resources>

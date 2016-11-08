@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.dn">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/DoughNut">
+        <activity
+            android:name="com.example.dn.AnalyzeActivity"
+
+            android:parentActivityName="com.example.dn.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dn.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.example.dn.AnalyzeInDomainActivity"
+
+            android:parentActivityName="com.example.dn.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dn.AnalyzeInDomainActivity"/>
+        </activity>
+        <activity
+            android:name="com.example.dn.DescribeActivity"
+
+            android:parentActivityName="com.example.dn.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dn.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.example.dn.RecognizeActivity"
+
+            android:parentActivityName="com.example.dn.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dn.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.example.dn.ThumbnailActivity"
+
+            android:parentActivityName="com.example.dn.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.dn.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.example.dn.helper.SelectImageActivity"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.dn.ScrollingActivity"
+            />
+        <activity android:name="com.example.dn.CalendarPage"/>
+        <activity android:name="com.example.dn.DataPage"/>
+        <activity android:name="com.example.dn.RealDataPg"/>
+        <activity android:name="com.example.dn.RewardsPage"/>
+        <activity android:name="com.example.dn.HomePage"/>
+        <activity
+            android:name="com.example.dn.MainActivity"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".helper.ProfileActivity">
+        </activity>
+        <activity android:name="com.example.dn.ProfileActivity">
+        </activity>
+    </application>
+
+</manifest>
